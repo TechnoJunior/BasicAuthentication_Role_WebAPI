@@ -14,6 +14,7 @@ namespace BasicAuthentication_RoleBased_WebAPI
     
     public partial class User
     {
+        public object Role { get; internal set; }
         public int U_Id { get; set; }
         public string U_Name { get; set; }
         public string U_Pass { get; set; }
