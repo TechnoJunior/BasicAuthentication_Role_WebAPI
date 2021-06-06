@@ -194,6 +194,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -218,6 +219,9 @@
     <Compile Include="Report.cs">
       <DependentUpon>OfficeDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Security\Authorized.cs" />
+    <Compile Include="Security\BasicAuthenticationAttribute.cs" />
+    <Compile Include="Security\UserValidate.cs" />
     <Compile Include="User.cs">
       <DependentUpon>OfficeDataModel.tt</DependentUpon>
     </Compile>
