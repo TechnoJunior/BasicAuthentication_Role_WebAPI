@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BasicAuthentication_RoleBased_WebAPI.Security;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,7 +11,7 @@ namespace BasicAuthentication_RoleBased_WebAPI
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-
+            config.Filters.Add(new BasicAuthenticationAttribute());
             // Web API routes
             config.MapHttpAttributeRoutes();
 
